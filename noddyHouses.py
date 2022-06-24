@@ -4,6 +4,7 @@
 # and in the end I was only able to write a solution that solved one of the base cases by working backwards.
 # Afterwards, I tried to solve it again on my own and drawing out the input really helped me understand the problem.
 # I've come up with a solution that *should* pass all of the tests. (I dont remember the test cases or the input restrictions)
+# Complexity is O(n); two for loops that iterate once n-times = O(n+n) = O(n) 
 
 # DESCRIPTION: 
 # Noddy wants to build a house on the biggest piece of land possible between two houses on the street. We're going to help Noddy 
