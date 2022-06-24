@@ -24,22 +24,24 @@ def findHouses(houses):
 
     # Initialize empty dictionary to hold house number and house position pairs.
     numbersAndPositions = {}
-
+    
+    # Store the number/position pairs in a hash map
     for index in range(len(houses)):
         # { key=HOUSE_NUMBER : value=HOUSE_POSITION }
         numbersAndPositions[houses[index][0]] = houses[index][1]
     
-    #variable to hold largest distance between houses
+    # variable to hold largest distance between houses
     maximum_Distance = 0
 
-    # assuming the house numbers start at 1 and increment by one.
+    # Calculate the distance between adjacent houses, assuming the house numbers start at 1 and increment by one.
     for index in range(1, len(houses)):
         distanceBetweenHouses = abs(numbersAndPositions[index] - numbersAndPositions[index+1])
         if distanceBetweenHouses > maximum_Distance:
             firstHouse = index
             secondHouse = index+1
             maximum_Distance = distanceBetweenHouses
-
+    
+    # Return an ascending list of the two houses with the largest area of land between them.
     return [firstHouse, secondHouse]
 
 
@@ -64,4 +66,4 @@ if __name__ == "__main__":
     # Print the input so we can validate it later.
     print("Input N: " + str(N))
     print("House number and position list: " + str(houses))
-    print("Solution? : " + str(findHouses(houses)))
+    print("Solution : " + str(findHouses(houses)))
