@@ -1,4 +1,4 @@
-# Noddy's House Problem
+# Jack's House Problem
 
 # Came across this problem in an OA. Language was a little confusing so it took me a while to figure out the nature of the problem 
 # and in the end I was only able to write a solution that solved one of the base cases by working backwards.
@@ -7,8 +7,8 @@
 # Complexity is O(n); two for loops that iterate once n-times = O(n+n) = O(n) 
 
 # DESCRIPTION: 
-# Noddy wants to build a house on the biggest piece of land possible between two houses on the street. We're going to help Noddy 
-# figure out what those houses are. All of the houses are in a straight line with house numbers 1 to N, and house position as distance 
+# Jack wants to build a house on the biggest piece of land possible between two houses on the street. We're going to help him 
+# figure out where those houses are. All of the houses are in a straight line with house numbers 1 to N, and house position as distance 
 # from the origin / street entry.
 #
 # INPUT:
